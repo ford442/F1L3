@@ -6,7 +6,6 @@ all:
 	$(EMCC) source/console.cpp source/dom.cpp examples/dom.cpp -o build/public_html/js/dom.js
 	$(EMCC) source/console.cpp source/indexed_db.cpp examples/indexed_db.cpp -o build/public_html/js/indexed_db.js
 f1:
-	$source ~/emsdk/emsdk_env.sh
 	$(EMCCC) f1l3/f1l3a.c -o f1a.js -s ENVIRONMENT=web -s INITIAL_MEMORY=700mb -s ALLOW_MEMORY_GROWTH=0 -O3  -s MALLOC="emmalloc" -s USES_DYNAMIC_ALLOC=0 -s SUPPORT_LONGJMP=0 -s FORCE_FILESYSTEM=1 -lidbfs.js -g0 -flto --closure 1
 	$(EMCC) source/console.cpp source/indexed_db.cpp f1l3/f1l3b.c  -o build/public_html/js/f1b.js --post-js f1l3/post-b.js -s EXPORTED_FUNCTIONS='["_main","_fl"]' -s EXPORTED_RUNTIME_METHODS='["ccall","cwrap"]'
 	$(EMCC) f1l3/f1l3c.c source/console.cpp source/indexed_db.cpp -o build/public_html/js/f1c.js --post-js f1l3/post-c.js -s EXPORTED_FUNCTIONS='["_main","_fl"]'  -s EXPORTED_RUNTIME_METHODS='["ccall","cwrap"]'
