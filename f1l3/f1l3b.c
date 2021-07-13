@@ -15,7 +15,7 @@ document.getElementById('strt').click();
 window.open("https://test.1ink.us/f1l3/f1c.php");
 });
 int data;
-data="test4321test";
+int data="test4321test";
 static indexed_db_instance_c db_instance={
 .js_object = val::undefined()};
 int main(){
