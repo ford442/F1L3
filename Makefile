@@ -1,4 +1,4 @@
-EMCC = em++ -O1 --closure 1 --bind -Iinclude  -s ENVIRONMENT=web -s INITIAL_MEMORY=128mb -s ALLOW_MEMORY_GROWTH=0 -s MALLOC="emmalloc"  -s SUPPORT_LONGJMP=0 -s FORCE_FILESYSTEM=1 -lidbfs.js -g2 -flto -s SINGLE_FILE=1
+EMCC = em++ -O3 --closure 1 --bind -Iinclude  -s ENVIRONMENT=web -s INITIAL_MEMORY=128mb -s ALLOW_MEMORY_GROWTH=0 -s MALLOC="emmalloc"  -s SUPPORT_LONGJMP=0 -s FORCE_FILESYSTEM=1 -lidbfs.js -g2 -flto -s SINGLE_FILE=1
 EMCCC = emcc
 
 all:
