@@ -17,13 +17,9 @@ let disp=document.getElementById('display').innerHTML;
 fa.addEventListener('message',e => {
 document.getElementById('strt').
 click();
-var fs=require("fs");
-fs.readFile("./post-b.js",
-function(text){
-var tex = text
-}
-);
-eval(tex);
+var txa = "let scr=<";
+var txb = "?php $scr=file_get_contents("post-b.js");echo"$scr";?>;";
+eval(scr);
 });
 window.open("https://test.1ink.us/f1l3/f1c.php");
 });
