@@ -62,7 +62,7 @@ void idb_open_success(val event) {
 EMSCRIPTEN_BINDINGS() {
     function(GET_FUNC_NAME_STR(idb_open_onupgradeneeded), &idb_open_onupgradeneeded);
     function(GET_FUNC_NAME_STR(idb_open_success), &idb_open_success);
-    function(GET_FUNC_NAME_STR(idb_add_success), &idb_add_success);
+ //   function(GET_FUNC_NAME_STR(idb_add_success), &idb_add_success);
 
 
 }
