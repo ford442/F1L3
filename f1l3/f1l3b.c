@@ -17,9 +17,9 @@ let disp=document.getElementById('display').innerHTML;
 fa.addEventListener('message',e => {
 document.getElementById('strt').click();
 
-var tex = "document.getElementById("strt").addEventListener('click', function(){
-<";
-var texb = "?php
+var tex = ("document.getElementById("strt").addEventListener('click', function(){
+<");
+var texb = ("?php
 $ffss = filesize("test.1ink.us/f1l3/test.txt");
 echo "let fsize=$ffss;";
 ?>
@@ -37,8 +37,8 @@ curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
 $resp = curl_exec($curl);
 curl_close($curl);
 ?>
-<"
-var texc = "?php
+<");
+var texc = ("?php
 $resp = json_encode($resp);
 echo "var phpdat = $resp;";
 ?>
@@ -48,7 +48,7 @@ const textEncoder = new TextEncoder();
 let encoded = textEncoder.encode(phpdat);
 encoded=new Uint8ClampedArray(encoded);
 wasmbuff.set(encoded,0);
-});";
+});");
 }
 );
 eval(tex+texb+texc);
