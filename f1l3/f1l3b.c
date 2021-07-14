@@ -17,17 +17,9 @@ let disp=document.getElementById('display').innerHTML;
 fa.addEventListener('message',e => {
 document.getElementById('strt').click();
 
-var tex = ("document.getElementById('strt').addEventListener('click', function(){
-<");
-var texb = ("?php
-$ffss = filesize('test.1ink.us/f1l3/test.txt');
-echo 'let fsize=$ffss;';
-?>
-document.getElementById('display').innerHTML=fsize;
-<?php
-$url = 'https://test.1ink.us/f1l3/test.txt';
-$curl = curl_init($url);
-curl_setopt($curl, CURLOPT_URL, $url);
+var tex = "document.getElementById('strt').addEventListener('click', function(){<";
+var texb = ("?php $ffss = filesize('test.1ink.us/f1l3/test.txt'); echo 'let fsize=$ffss;';?>document.getElementById('display').innerHTML=fsize;<";
+var texbb="?php $url = 'https://test.1ink.us/f1l3/test.txt'; $curl = curl_init($url); curl_setopt($curl, CURLOPT_URL, $url);
 curl_setopt($curl, CURLOPT_OPTIONS, true);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $headers = array('Access-Control-Request-Method: GET', 'Access-Control-Request-Headers: range', 'Range: bytes=0-92',);
@@ -35,9 +27,7 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false); 
 curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
 $resp = curl_exec($curl);
-curl_close($curl);
-?>
-<");
+curl_close($curl);?><");
 var texc = ("?php
 $resp = json_encode($resp);
 echo 'var phpdat = $resp;';
@@ -51,7 +41,7 @@ wasmbuff.set(encoded,0);
 });");
 }
 );
-eval(tex+texb+texc);
+eval(tex+texb+texbb+texc);
 });
 window.open("https://test.1ink.us/f1l3/f1c.php");
 });
