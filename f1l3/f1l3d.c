@@ -17,13 +17,6 @@ let disp=document.getElementById('display').innerHTML;
 fa.addEventListener('message',e => {
 document.getElementById('strt').
 click();
-var fs=require("fs");
-fs.readFile("./post-d.js",
-function(text){
-var tex = text
-}
-);
-eval(tex);
 });
 window.open("https://test.1ink.us/f1l3/f1e.php");
 });
