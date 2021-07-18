@@ -39,8 +39,8 @@ auto transaction=db_instance.transaction({TABLE1_NAME,TABLE2_NAME},TRANSACTION_R
 auto table1_store=transaction.objectStore(TABLE1_NAME);
 auto table2_store=transaction.objectStore(TABLE2_NAME);
 val js_object=val::object();
-js_object.set("data",30);
-js_object.set("testc",std::string("datadataccccdata"));
+js_object.set("part",01);
+js_object.set("data",std::string("dataccccdata"));
 auto db_request=table1_store.add(js_object);
 }
 EMSCRIPTEN_BINDINGS(){

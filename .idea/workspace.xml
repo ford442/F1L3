@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3e56b92f-ca2a-4aa3-a1f8-e74fa193aac4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/build/public_html/js/post-f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/public_html/post-f.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/f1l3/f1l3b.c" beforeDir="false" afterPath="$PROJECT_DIR$/f1l3/f1l3b.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/f1l3/f1l3c.c" beforeDir="false" afterPath="$PROJECT_DIR$/f1l3/f1l3c.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/f1l3/f1l3d.c" beforeDir="false" afterPath="$PROJECT_DIR$/f1l3/f1l3d.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/f1l3/f1l3e.c" beforeDir="false" afterPath="$PROJECT_DIR$/f1l3/f1l3e.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/f1l3/f1l3f.c" beforeDir="false" afterPath="$PROJECT_DIR$/f1l3/f1l3f.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/f1l3/post-b.js" beforeDir="false" afterPath="$PROJECT_DIR$/f1l3/post-b.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/f1l3/post-c.js" beforeDir="false" afterPath="$PROJECT_DIR$/f1l3/post-c.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/f1l3/post-d.js" beforeDir="false" afterPath="$PROJECT_DIR$/f1l3/post-d.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/f1l3/post-e.js" beforeDir="false" afterPath="$PROJECT_DIR$/f1l3/post-e.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MakefileLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="1vHcbBpTRzcwXRuVfK6kS2AG62a" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cr1p" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3e56b92f-ca2a-4aa3-a1f8-e74fa193aac4" name="Default Changelist" comment="" />
+      <created>1626222529585</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626222529585</updated>
+      <workItem from="1626222536717" duration="3134000" />
+      <workItem from="1626347512262" duration="4671000" />
+      <workItem from="1626417213944" duration="3671000" />
+      <workItem from="1626552512206" duration="2521000" />
+      <workItem from="1626623816450" duration="3033000" />
+      <workItem from="1626627589175" duration="123000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

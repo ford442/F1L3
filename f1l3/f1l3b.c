@@ -2,7 +2,7 @@
 #include<emscripten.h>
 #include <indexed_db.hpp>
 #define GET_FUNC_NAME_STR(func) #func
-#define DATABASE_NAME "Local-DB"
+#define DATABASE_NAME "F1L3"
 #define TABLE1_NAME "table1"
 #define TABLE2_NAME "table2"
 static indexed_db_instance_c db_instance={
@@ -39,8 +39,8 @@ auto transaction=db_instance.transaction({TABLE1_NAME,TABLE2_NAME},TRANSACTION_R
 auto table1_store=transaction.objectStore(TABLE1_NAME);
 auto table2_store=transaction.objectStore(TABLE2_NAME);
 val js_object=val::object();
-js_object.set("data",30);
-js_object.set("testb",std::string("datadatabbbbdata"));
+js_object.set("part",00);
+js_object.set("data",std::string("databbbbdata"));
 auto db_request=table1_store.add(js_object);
 }
 EMSCRIPTEN_BINDINGS(){
