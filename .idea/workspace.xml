@@ -10,17 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e56b92f-ca2a-4aa3-a1f8-e74fa193aac4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/public_html/js/post-f.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/public_html/post-f.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/f1l3/f1l3b.c" beforeDir="false" afterPath="$PROJECT_DIR$/f1l3/f1l3b.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/f1l3/f1l3c.c" beforeDir="false" afterPath="$PROJECT_DIR$/f1l3/f1l3c.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/f1l3/f1l3d.c" beforeDir="false" afterPath="$PROJECT_DIR$/f1l3/f1l3d.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/f1l3/f1l3e.c" beforeDir="false" afterPath="$PROJECT_DIR$/f1l3/f1l3e.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/f1l3/f1l3f.c" beforeDir="false" afterPath="$PROJECT_DIR$/f1l3/f1l3f.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/f1l3/post-b.js" beforeDir="false" afterPath="$PROJECT_DIR$/f1l3/post-b.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/f1l3/post-c.js" beforeDir="false" afterPath="$PROJECT_DIR$/f1l3/post-c.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/f1l3/post-d.js" beforeDir="false" afterPath="$PROJECT_DIR$/f1l3/post-d.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/f1l3/post-e.js" beforeDir="false" afterPath="$PROJECT_DIR$/f1l3/post-e.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +71,7 @@
       <workItem from="1626417213944" duration="3671000" />
       <workItem from="1626552512206" duration="2521000" />
       <workItem from="1626623816450" duration="3033000" />
-      <workItem from="1626627589175" duration="123000" />
+      <workItem from="1626627589175" duration="684000" />
     </task>
     <servers />
   </component>
