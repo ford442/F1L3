@@ -20,13 +20,19 @@ sbtn.addEventListener("click",function(){
 */     
 var fdb;
 var request = window.indexedDB.open("F1L3", 1);
+  console.log("F1");
 request.onsuccess = function(event) {
+    console.log("F1 open success");
+
 fdb = request.result;
 var transaction = fdb.transaction(["table1"]);
 var objectStore = transaction.objectStore("table1");
 request = objectStore.get("00");
+    console.log("F1 get 00");
+
 request.onsuccess = function(event) {
 if(request.result) {
+    console.log("F1 request result TRUE");
 console.log(request.result.data);
 }};};});});
 int main(){
