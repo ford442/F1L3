@@ -8,7 +8,7 @@ let encoded = textEncoder.encode(string);
 encoded=new Uint8ClampedArray(encoded);
 wasmbuff.set(encoded,0);
 let utf8decoder = new TextDecoder();
-console.log(utf8decoder.decode(W.buffer));
+/* console.log(utf8decoder.decode(W.buffer)); */
 let options={type: 'idb',webWorkerSupport: false};
 let fa=new BroadcastChannel('f1a',options);
 let bz=new BroadcastChannel('bez',options);
