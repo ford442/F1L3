@@ -22,20 +22,13 @@ var fdb;
 var request = window.indexedDB.open("F1L3", 1);
 request.onsuccess = function(event) {
 fdb = request.result;
-var objectStore = fdb.createObjectStore("parts", {keyPath: "part"});
-var transaction = fdb.transaction(["parts"]);
-var objectStore = transaction.objectStore("parts");
+var transaction = fdb.transaction(["table1"]);
+var objectStore = transaction.objectStore("table1");
 request = objectStore.get("00");
 request.onsuccess = function(event) {
 if(request.result) {
 console.log(request.result.data);
-}};
-request.onupgradeneeded = function(event) {
-fdb = event.target.result;
-var objectStore = fdb.createObjectStore("parts", {keyPath: "part"});
-}};
-});
-});
+}};};});});
 int main(){
 ma();
 return 1;}
