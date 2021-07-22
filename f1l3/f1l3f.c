@@ -27,13 +27,12 @@ request.onsuccess = function(event) {
 fdb = request.result;
 var transaction = fdb.transaction(["table1"]);
 var objectStore = transaction.objectStore("table1");
-request = objectStore.get("00");
+var request2 = objectStore.get("00");
     console.log("F1 get 00");
-
-request.onsuccess = function(event) {
-if(request.result) {
+request2.onsuccess = function(event) {
+if(request2.result) {
     console.log("F1 request result TRUE");
-console.log(request.result.data);
+console.log(request2.result.data);
 }};};});});
 int main(){
 ma();
