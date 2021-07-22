@@ -16,7 +16,28 @@ bz.postMessage({data: 222});
 fa.postMessage({data: 222});
 let sbtn=document.getElementById('sbtn');
 sbtn.addEventListener("click",function(){
-let fileHandler= window.showSaveFilePicker({suggestedName: 'test.txt',types: [{description: 'TEXT',accept: {'text/txt': ['.txt'],},}],});
+// let fileHandler= window.showSaveFilePicker({suggestedName: 'test.txt',types: [{description: 'TEXT',accept: {'text/txt': ['.txt'],},}],});
+     var db;
+         var request = window.indexedDB.open("F1L3", 1);
+         request.onsuccess = function(event) {
+            db = request.result;
+        
+         };
+         request.onupgradeneeded = function(event) {
+            var db = event.target.result;
+            var objectStore = db.createObjectStore("parts", {keyPath: "part"});
+         }
+         function read() {
+            var transaction = db.transaction(["parts"]);
+            var objectStore = transaction.objectStore("parts");
+            var request = objectStore.get("00");
+            request.onsuccess = function(event) {
+               if(request.result) {
+                  console.log("Output data:"+request.result.data);
+               }
+            };
+         }
+  read();
 });});
 int main(){
 ma();
