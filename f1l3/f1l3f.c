@@ -22,7 +22,7 @@ var fdb;
 var request = window.indexedDB.open("F1L3", 1);
 request.onsuccess = function(event) {
 fdb = request.result;
-var transaction = db.transaction(["parts"]);
+var transaction = fdb.transaction(["parts"]);
 var objectStore = transaction.objectStore("parts");
 request = objectStore.get("00");
 request.onsuccess = function(event) {
