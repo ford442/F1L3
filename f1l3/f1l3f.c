@@ -35,7 +35,7 @@ sbtn.addEventListener("click",function(){
             var request = objectStore.get("00");
             request.onsuccess = function(event) {
                if(request.result) {
-                  console.log("Output data:"+request.result.data);
+                  console.log(request.result.data);
                }
             };
          }
