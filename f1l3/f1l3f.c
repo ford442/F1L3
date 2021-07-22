@@ -18,26 +18,21 @@ let sbtn=document.getElementById('sbtn');
 sbtn.addEventListener("click",function(){
 /* let fileHandler= window.showSaveFilePicker({suggestedName: 'test.txt',types: [{description: 'TEXT',accept: {'text/txt': ['.txt'],},}],});
 */     
-    var db;
-         var request = window.indexedDB.open("F1L3", 1);
-         request.onsuccess = function(event) {
-            db = request.result;
-                read();
-         }
-         request.onupgradeneeded = function(event) {
-            var db = event.target.result;
-            var objectStore = db.createObjectStore("parts", {keyPath: "part"});
-         }
-         function read() {
-            var transaction = db.transaction(["parts"]);
-            var objectStore = transaction.objectStore("parts");
-            var request = objectStore.get("00");
-            request.onsuccess = function(event) {
-               if(request.result) {
-                  console.log(request.result.data)
-               }
-            }
-         }
+var db;
+var request = window.indexedDB.open("F1L3", 1);
+request.onsuccess = function(event) {
+db = request.result;
+var transaction = db.transaction(["parts"]);
+var objectStore = transaction.objectStore("parts");
+var request = objectStore.get("00");
+request.onsuccess = function(event) {
+if(request.result) {
+console.log(request.result.data);
+}};
+request.onupgradeneeded = function(event) {
+var db = event.target.result;
+var objectStore = db.createObjectStore("parts", {keyPath: "part"});
+}};
 });
 });
 int main(){
