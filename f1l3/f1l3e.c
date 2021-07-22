@@ -27,7 +27,7 @@ return 0;
 }
 void idb_open_onupgradeneeded(val event){
 db_instance=db_instance.get_result(event);
-db_instance.createObjectStore(TABLE1_NAME,"part");
+db_instance.createObjectStore(TABLE1_NAME,"part",false);
 db_instance.createObjectStore(TABLE2_NAME);
 main();
 }
