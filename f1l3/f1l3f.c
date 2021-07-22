@@ -24,7 +24,7 @@ sbtn.addEventListener("click",function(){
                 read();
 
         
-         };
+         }
          request.onupgradeneeded = function(event) {
             var db = event.target.result;
             var objectStore = db.createObjectStore("parts", {keyPath: "part"});
