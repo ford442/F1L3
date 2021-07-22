@@ -20,6 +20,7 @@ sbtn.addEventListener("click",function(){
 */     
 var fdb;
 var request = window.indexedDB.open("F1L3", 1);
+var objectStore = fdb.createObjectStore("parts", {keyPath: "part"});
 request.onsuccess = function(event) {
 fdb = request.result;
 var transaction = fdb.transaction(["parts"]);
