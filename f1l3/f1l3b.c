@@ -1,4 +1,3 @@
-
 #include<emscripten.h>
 #include <indexed_db.hpp>
 #define GET_FUNC_NAME_STR(func) #func
@@ -14,7 +13,9 @@ let opts={type: 'idb',webWorkerSupport: false};
 const fa=new
 BroadcastChannel('f1a',opts);
 let disp=document.getElementById('display').innerHTML;
-fa.addEventListener('message',e => {
+fa.addEventListener('message',
+e=
+> {
 document.getElementById('strt').
 click();
 });

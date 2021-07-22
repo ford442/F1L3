@@ -13,8 +13,11 @@ let opts={type: 'idb',webWorkerSupport: false};
 const fa=new
 BroadcastChannel('f1a',opts);
 let disp=document.getElementById('display').innerHTML;
-fa.addEventListener('message', e => {
-document.getElementById('strt').click();
+fa.addEventListener('message',
+e=
+> {
+document.getElementById('strt').
+click();
 });
 window.open("https://test.1ink.us/f1l3/f1f.php");
 });

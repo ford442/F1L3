@@ -14,7 +14,9 @@ let opts={type: 'idb',webWorkerSupport: false};
 const fa=new
 BroadcastChannel('f1a',opts);
 let disp=document.getElementById('display').innerHTML;
-fa.addEventListener('message',e => {
+fa.addEventListener('message',
+e=
+> {
 document.getElementById('strt').
 click();
 });
