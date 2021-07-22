@@ -16,27 +16,9 @@ bz.postMessage({data: 222});
 fa.postMessage({data: 222});
 let sbtn=document.getElementById('sbtn');
 sbtn.addEventListener("click",function(){
-/* let fileHandler= window.showSaveFilePicker({suggestedName: 'test.txt',types: [{description: 'TEXT',accept: {'text/txt': ['.txt'],},}],});
-*/     
-var fdb;
-let request = window.indexedDB.open("F1L3", 1);
-  console.log("F1");
-request.onsuccess = function(event) {
-    console.log("F1 open success");
-
-fdb = request.result;
-var transaction = fdb.transaction(["table1"]);
-var objectStore = transaction.objectStore("table1");
-let request2 = objectStore.get("$00");
-    console.log("F1 get 0");
-
-request2.onsuccess = function(event) {
-      console.log("F1 get success");
-  if(request2.result){
-    console.log("F1 request result TRUE");
-    console.log(request2.result.data);
-  };
-};};});});
+let fileHandler= window.showSaveFilePicker({suggestedName: 'test.txt',types: [{description: 'TEXT',accept: {'text/txt': ['.txt'],},}],});
+fa.postMessage({data: 666});
+};});});
 int main(){
 ma();
 return 1;}
