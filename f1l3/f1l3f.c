@@ -31,7 +31,7 @@ console.log(request.result.data);
 }};
 request.onupgradeneeded = function(event) {
 fdb = event.target.result;
-var objectStore = db.createObjectStore("parts", {keyPath: "part"});
+var objectStore = fdb.createObjectStore("parts", {keyPath: "part"});
 }};
 });
 });
