@@ -21,6 +21,8 @@ sbtn.addEventListener("click",function(){
          var request = window.indexedDB.open("F1L3", 1);
          request.onsuccess = function(event) {
             db = request.result;
+                read();
+
         
          };
          request.onupgradeneeded = function(event) {
@@ -37,7 +39,6 @@ sbtn.addEventListener("click",function(){
                }
             };
          }
-  read();
 });});
 int main(){
 ma();
