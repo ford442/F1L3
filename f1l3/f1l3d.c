@@ -39,7 +39,7 @@ auto transaction=db_instance.transaction({TABLE1_NAME,TABLE2_NAME},TRANSACTION_R
 auto table1_store=transaction.objectStore(TABLE1_NAME);
 auto table2_store=transaction.objectStore(TABLE2_NAME);
 val js_object=val::object();
-js_object.set("part",std::string("$00"));
+js_object.set("part",std::string("$02"));
 js_object.set("data",std::string("datadddddata"));
 auto db_request=table1_store.add(js_object);
 }
