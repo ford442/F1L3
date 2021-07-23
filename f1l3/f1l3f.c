@@ -1,43 +1,23 @@
 #include<emscripten.h>
-EM_JS(void,ma,(),
-{
-let W=new
-WebAssembly.Memory({
-initial:5});
-let wasmbuff=new
-Uint8ClampedArray(W
-.buffer,0,128);
-const textEncoder=new
-TextEncoder();
-let string="test test 1234 test test";
-let encoded=textEncoder.encode(string);
-encoded=new
-Uint8ClampedArray(encoded);
-wasmbuff.
-set(encoded,
-0);
-let utf8decoder=new
-TextDecoder();
-/* console.log(utf8decoder.decode(W.buffer)); */
+EM_JS(void,ma,(),{
 let options={type: 'idb',webWorkerSupport: false};
-let fa=new
-BroadcastChannel('f1a',options);
-let bz=new
-BroadcastChannel('bez',options);
-bz.postMessage({
-data: 222});
-fa.postMessage({
-data: 222});
+let fa=new BroadcastChannel('f1a',options);
+let bz=new BroadcastChannel('bez',options);
+bz.postMessage({data: 222});
+fa.postMessage({data: 222});
+fa.addEventListener('message',ea=> {
+if (ea.data=667){
+console.log("Part A Saved.");}
+if (ea.data=668){
+console.log("Part B Saved.");}
+if (ea.data=669){
+console.log("Part C Saved.");}
+if (ea.data=670){
+console.log("Part D Saved.");}}
 let sbtn=document.getElementById('sbtn');
-sbtn.addEventListener("click",
-function(){
-let fileHandler=window.showSaveFilePicker({suggestedName: 'test.txt',types: [{
-description:
-'TEXT',accept: {'text/txt': ['.txt'],},
+sbtn.addEventListener("click",function(){
+fa.postMessage({data: 888});
 }],});
 fa.postMessage({data: 666});
 };});});
-int main(){
-ma();
-return 1;
-}
+int main(){ma();return 1;}
