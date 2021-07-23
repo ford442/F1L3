@@ -5,7 +5,7 @@ let fa=new BroadcastChannel('f1a',options);
 let bz=new BroadcastChannel('bez',options);
 bz.postMessage({data: 222});
 fa.postMessage({data: 222});
-fa.addEventListener('message',ea=> {
+fa.addEventListener('message',ea => {
 if (ea.data=667){
 console.log("Part A Saved.");}
 if (ea.data=668){
