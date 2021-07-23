@@ -15,8 +15,10 @@ console.log("Part C Saved.");}
 if (ea.data=670){
 console.log("Part D Saved.");}
 };);
-document.getElementById('sbtn').addEventListener("click",function(){
+let sbtn=document.getElementById('sbtn');
+sbtn.addEventListener("click",function(){
+fa.postMessage({data: 888});
+});
 fa.postMessage({data: 666});
-}],});
-};});});
+});
 int main(){ma();return 1;}
