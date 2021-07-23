@@ -3,7 +3,7 @@ EM_JS(void,ma,(),{
 let options={type: 'idb',webWorkerSupport: false};
 let disp=document.getElementById('display').innerHTML;
 var fil=document.getElementById('fil');
-let fa=newBroadcastChannel('f1a', options);
+let fa=new BroadcastChannel('f1a', options);
 fa.addEventListener('message',ea=> {
 if (ea.data=666){
 let fa=new WebAssembly.Memory({initial:20});
