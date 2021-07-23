@@ -13,7 +13,8 @@ console.log("Part B Saved.");}
 if (ea.data=669){
 console.log("Part C Saved.");}
 if (ea.data=670){
-console.log("Part D Saved.");}}
+console.log("Part D Saved.");}
+};);
 let sbtn=document.getElementById('sbtn');
 sbtn.addEventListener("click",function(){
 fa.postMessage({data: 888});
