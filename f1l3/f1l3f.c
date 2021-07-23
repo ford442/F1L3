@@ -18,7 +18,7 @@ console.log("Part D Saved.");}
 let sbtn=document.getElementById('sbtn');
 sbtn.addEventListener("click",function(){
 fa.postMessage({data: 888});
-}],});
+});
 fa.postMessage({data: 666});
-};});});
+});
 int main(){ma();return 1;}
