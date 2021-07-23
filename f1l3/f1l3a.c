@@ -3,16 +3,15 @@ EM_JS(void,ma,(),{
 let options={type: 'idb',webWorkerSupport: false};
 let disp=document.getElementById('display').innerHTML;
 var fil=document.getElementById('fil');
-let fa=newBroadcastChannel('f1a', options);
+let fa=new BroadcastChannel('f1a', options);
 fa.addEventListener('message',ea=> {
-if (ea.data=666){
 let fa=new WebAssembly.Memory({initial:20});
+if (ea.data=666){
 let w1=new Uint8ClampedArray(fa.buffer,0,64);
 let w2=new Uint8ClampedArray(fa.buffer,65,64);
 let w3=new Uint8ClampedArray(fa.buffer,129,64);
 let w4=new Uint8ClampedArray(fa.buffer,191,64);
 let textEncoder=new TextEncoder();
-let utf8decoder=new TextDecoder();
 var fdb;
 let rq=window.indexedDB.open("F1L3",1);
 console.log("F1");
@@ -61,6 +60,7 @@ console.log("f1 store success 3");
 fa.postMessage({data: 670});
 };};};};
 if (ea.data=888){
+let utf8decoder=new TextDecoder();
 console.log(utf8decoder.decode(fa.buffer));
 };});
 fil.addEventListener('click',function(){
