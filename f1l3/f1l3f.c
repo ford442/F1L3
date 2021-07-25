@@ -12,7 +12,7 @@ let f1a=new WebAssembly.Memory({initial:20});
 let w1=new Uint8ClampedArray(f1a.buffer);
 w1.set(ef.data,0);
 document.getElementById('disp').innerHTML=f1a.buffer;
-}}):
+}});
 fa.addEventListener('message',ea => {
 if (ea.data===667){
 console.log("Part A Saved.");}
