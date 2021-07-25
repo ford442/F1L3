@@ -14,10 +14,11 @@ document.getElementById('strt').click();
 });
 static indexed_db_instance_c db_instance={.js_object = val::undefined()};
 int main(){
+ma();
 auto db_request=indexedDB.open(DATABASE_NAME,1);
 db_request.onupgradeneeded(GET_FUNC_NAME_STR(idb_open_onupgradeneeded));
 db_request.onsuccess(GET_FUNC_NAME_STR(idb_open_success));
-ma();return 0;}
+return 0;}
 void idb_open_onupgradeneeded(val event){
 db_instance=db_instance.get_result(event);
 db_instance.createObjectStore(TABLE1_NAME,"part",false);
