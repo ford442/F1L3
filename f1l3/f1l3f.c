@@ -8,7 +8,10 @@ bz.postMessage({data: 222});
 fa.postMessage({data: 222});
 ff.addEventListener('message',ef => {
 if (ef.data){
-document.getElementById('disp').innerHTML=ef.data;
+let f1a=new WebAssembly.Memory({initial:20});
+let w1=new Uint8ClampedArray(f1a.buffer);
+w1.set(ef.data,0);
+document.getElementById('disp').innerHTML=f1a.buffer;
 }}):
 fa.addEventListener('message',ea => {
 if (ea.data===667){
