@@ -6,13 +6,13 @@ let bz=new BroadcastChannel('bez',options);
 bz.postMessage({data: 222});
 fa.postMessage({data: 222});
 fa.addEventListener('message',ea => {
-if (ea.data=667){
+if (ea.data===667){
 console.log("Part A Saved.");}
-if (ea.data=668){
+if (ea.data===668){
 console.log("Part B Saved.");}
-if (ea.data=669){
+if (ea.data===669){
 console.log("Part C Saved.");}
-if (ea.data=670){
+if (ea.data===670){
 console.log("Part D Saved.");}
 });
 document.getElementById('fbtn').addEventListener("click",function(){
