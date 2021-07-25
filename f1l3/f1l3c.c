@@ -6,13 +6,13 @@
 #define TABLE2_NAME "table2"
 static indexed_db_instance_c db_instance={.js_object = val::undefined()};
 EM_JS(void,ma,(),{
+window.open("https://test.1ink.us/f1l3/f1d.php");
 let opts={type: 'idb',webWorkerSupport: false};
 const fa=new BroadcastChannel('strt',opts);
 let disp=document.getElementById('display').innerHTML;
 fa.addEventListener('message',e=> {
 document.getElementById('strt').click();
 });
-window.open("https://test.1ink.us/f1l3/f1d.php");
 });
 int main(){
 auto db_request=indexedDB.open(DATABASE_NAME,1);
