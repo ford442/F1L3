@@ -68,7 +68,7 @@ let utf8decoder=new TextDecoder();
 disp=utf8decoder.decode(f1a.buffer);
 console.log('buffer?');
 console.log(f1a.buffer);
-console.log('buffer?);
+console.log('buffer?');
 ff.postMessage({f1a.buffer});
 };});
 });
