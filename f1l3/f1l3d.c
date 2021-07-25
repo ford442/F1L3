@@ -7,8 +7,7 @@
 static indexed_db_instance_c db_instance={.js_object = val::undefined()};
 EM_JS(void,ma,(),{
 let opts={type: 'idb',webWorkerSupport: false};
-const fa=new BroadcastChannel('strt',opts);
-let disp=document.getElementById('display').innerHTML;
+let fa=new BroadcastChannel('strt',opts);
 fa.addEventListener('message',e=> {
 document.getElementById('strt').click();
 });
