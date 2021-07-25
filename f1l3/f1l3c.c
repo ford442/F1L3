@@ -7,7 +7,7 @@
 EM_JS(void,ma,(),{
 window.open("https://test.1ink.us/f1l3/f1d.php");
 let opts={type: 'idb',webWorkerSupport: false};
-const fa=new BroadcastChannel('strt',opts);
+let fa=new BroadcastChannel('strt',opts);
 fa.addEventListener('message',e=> {
 document.getElementById('strt').click();
 });
