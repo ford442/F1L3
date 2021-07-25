@@ -7,12 +7,11 @@ let bz=new BroadcastChannel('bez',options);
 bz.postMessage({data: 222});
 fa.postMessage({data: 222});
 ff.addEventListener('message',ef => {
-if (ef.data){
 let f1a=new WebAssembly.Memory({initial:20});
-let w1=new Uint8ClampedArray(f1a.buffer);
+let w1=new Uint8ClampedArray(f1a.buffer,0,512);
 w1.set(ef.data,0);
 document.getElementById('disp').innerHTML=f1a.buffer;
-}});
+});
 fa.addEventListener('message',ea => {
 if (ea.data===667){
 console.log("Part A Saved.");}
