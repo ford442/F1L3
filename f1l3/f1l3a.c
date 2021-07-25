@@ -7,13 +7,18 @@ window.open("https://test.1ink.us/f1l3/f1b.php");
 let options={type: 'idb',webWorkerSupport: false};
 let disp=document.getElementById('display').innerHTML;
 let fa=new BroadcastChannel('f1a', options);
+let ff=new BroadcastChannel('f1f', options);
+let st=new BroadcastChannel('strt', options);
 fa.addEventListener('message',ea=> {
 let f1a=new WebAssembly.Memory({initial:5});
 let f1b=new WebAssembly.Memory({initial:5});
 let f1c=new WebAssembly.Memory({initial:5});
 let f1d=new WebAssembly.Memory({initial:5});
 let f1f=new WebAssembly.Memory({initial:20});
-if (ea.data=666){
+if(ea.data===222){
+st.postMessage({data: 111});
+};
+if (ea.data===666){
 let textEncoder=new TextEncoder();
 var fdb;
 let rq=window.indexedDB.open("F1L3",1);
@@ -58,9 +63,10 @@ w4.set(new Uint8ClampedArray(textEncoder.encode(p4.result.data)),0);
 console.log("f1 store success 3");
 fa.postMessage({data: 670});
 };};};};
-if (ea.data=888){
+if (ea.data===888){
 let utf8decoder=new TextDecoder();
 disp=utf8decoder.decode(f1a.buffer);
+ff.postMessage({f1a.buffer});
 };});
 });
 int main(){ma();return 1;}
