@@ -31,4 +31,3 @@ auto db_request=table1_store.add(js_object);}
 EMSCRIPTEN_BINDINGS(){
 function(GET_FUNC_NAME_STR(idb_open_onupgradeneeded),&idb_open_onupgradeneeded);
 function(GET_FUNC_NAME_STR(idb_open_success),&idb_open_success);}
-}
