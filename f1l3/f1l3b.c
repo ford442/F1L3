@@ -1,4 +1,6 @@
 #include<emscripten.h>
+
+
 #include <indexed_db.hpp>
 #define GET_FUNC_NAME_STR(func) #func
 #define DATABASE_NAME "F1L3"
@@ -7,8 +9,7 @@
 static indexed_db_instance_c db_instance={.js_object = val::undefined()};
 int main(){
 return 0;}
-int php00(int prtC[]){
-int prt[] = prtC[];
+int php00(int prt[]){
 return 0;}
 int php00st(){
 auto db_request=indexedDB.open(DATABASE_NAME,1);
