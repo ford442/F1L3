@@ -9,11 +9,6 @@ int main(){
 return 0;}
 int php00(int prt[]){
 return 0;}
-int php00st(){
-auto db_request=indexedDB.open(DATABASE_NAME,1);
-db_request.onupgradeneeded(GET_FUNC_NAME_STR(idb_open_onupgradeneeded));
-db_request.onsuccess(GET_FUNC_NAME_STR(idb_open_success));
-return 0;}
 void idb_open_onupgradeneeded(val event){
 db_instance=db_instance.get_result(event);
 db_instance.createObjectStore(TABLE1_NAME,"part",false);
@@ -31,3 +26,8 @@ auto db_request=table1_store.add(js_object);}
 EMSCRIPTEN_BINDINGS(){
 function(GET_FUNC_NAME_STR(idb_open_onupgradeneeded),&idb_open_onupgradeneeded);
 function(GET_FUNC_NAME_STR(idb_open_success),&idb_open_success);}
+int php00st(){
+auto db_request=indexedDB.open(DATABASE_NAME,1);
+db_request.onupgradeneeded(GET_FUNC_NAME_STR(idb_open_onupgradeneeded));
+db_request.onsuccess(GET_FUNC_NAME_STR(idb_open_success));
+return 0;}
