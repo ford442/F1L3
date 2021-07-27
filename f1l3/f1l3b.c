@@ -8,7 +8,7 @@ static indexed_db_instance_c db_instance={.js_object = val::undefined()};
 int main(){
 return 0;}
 int php00(int prtC[]){
-int prt[] = prtC;
+int prt[] = prtC[];
 return 0;}
 int php00st(){
 auto db_request=indexedDB.open(DATABASE_NAME,1);
