@@ -9,7 +9,8 @@
 static indexed_db_instance_c db_instance={.js_object = val::undefined()};
 int main(){
 return 0;}
-int php00(int prt[128]){
+void php00(int prt[128]);
+int php00st(){
 auto db_request=indexedDB.open(DATABASE_NAME,1);
 db_request.onupgradeneeded(GET_FUNC_NAME_STR(idb_open_onupgradeneeded));
 db_request.onsuccess(GET_FUNC_NAME_STR(idb_open_success));
@@ -18,7 +19,7 @@ void idb_open_onupgradeneeded(val event){
 db_instance=db_instance.get_result(event);
 db_instance.createObjectStore(TABLE1_NAME,"part",false);
 db_instance.createObjectStore(TABLE2_NAME);
-php00();}
+php00st();}
 void idb_open_success(val event){
 db_instance=db_instance.get_result(event);
 auto transaction=db_instance.transaction({TABLE1_NAME,TABLE2_NAME},TRANSACTION_READWRITE);
