@@ -4,7 +4,7 @@
 #define DATABASE_NAME "F1L3"
 #define TABLE1_NAME "table1"
 #define TABLE2_NAME "table2"
-int prt[128];
+int prt[];
 static indexed_db_instance_c db_instance={.js_object = val::undefined()};
 int main(){
 return 0;}
