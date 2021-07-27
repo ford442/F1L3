@@ -18,14 +18,15 @@ db_instance=db_instance.get_result(event);
 db_instance.createObjectStore(TABLE1_NAME,"part",false);
 db_instance.createObjectStore(TABLE2_NAME);
 php00st();}
-void idb_open_success(val event){
+void idb_open_success(val event,int prt){
 db_instance=db_instance.get_result(event);
 auto transaction=db_instance.transaction({TABLE1_NAME,TABLE2_NAME},TRANSACTION_READWRITE);
 auto table1_store=transaction.objectStore(TABLE1_NAME);
 auto table2_store=transaction.objectStore(TABLE2_NAME);
 val js_object=val::object();
 js_object.set("part",std::string("$00"));
-js_object.set("data",(int prt));
+  
+js_object.set("data",prt);
 auto db_request=table1_store.add(js_object);}
 EMSCRIPTEN_BINDINGS(){
 function(GET_FUNC_NAME_STR(idb_open_onupgradeneeded),&idb_open_onupgradeneeded);
