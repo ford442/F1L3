@@ -9,7 +9,7 @@
 static indexed_db_instance_c db_instance={.js_object = val::undefined()};
 int main(){
 return 0;}
-int php00(int prt[128]){
+void php00(int prt[128]){
 auto db_request=indexedDB.open(DATABASE_NAME,1);
 db_request.onupgradeneeded(GET_FUNC_NAME_STR(idb_open_onupgradeneeded));
 db_request.onsuccess(GET_FUNC_NAME_STR(idb_open_success));
