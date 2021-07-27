@@ -4,10 +4,7 @@
 #define DATABASE_NAME "F1L3"
 #define TABLE1_NAME "table1"
 #define TABLE2_NAME "table2"
-EM_JS(void,ma,(),{
-});
 static indexed_db_instance_c db_instance={.js_object = val::undefined()};
-ma();
 int main(){
 auto db_request=indexedDB.open(DATABASE_NAME,1);
 db_request.onupgradeneeded(GET_FUNC_NAME_STR(idb_open_onupgradeneeded));
