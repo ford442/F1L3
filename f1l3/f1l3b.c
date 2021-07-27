@@ -8,7 +8,7 @@ static indexed_db_instance_c db_instance={.js_object = val::undefined()};
 int main(){
 return 0;}
 int php00(int siz, int prtC[siz]);
-siz = 128;
+int siz = 128;
 int prt[siz] = prtC;
 return 0;
 int php00st(){
