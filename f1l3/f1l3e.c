@@ -5,7 +5,6 @@
 #define TABLE1_NAME "table1"
 #define TABLE2_NAME "table2"
 EM_JS(void,ma,(),{
-window.open("https://test.1ink.us/f1l3/f1f.php");
 let opts={type: 'idb',webWorkerSupport: false};
 let fa=new BroadcastChannel('strt',opts);
 fa.addEventListener('message',e=> {
