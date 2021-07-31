@@ -15,10 +15,10 @@ let f1c=new WebAssembly.Memory({initial:5});
 let f1d=new WebAssembly.Memory({initial:5});
 let f1f=new WebAssembly.Memory({initial:20});
 fa.addEventListener('message',ea=> {
-if(ea.data==="222"){
+if(ea.data="222"){
 st.postMessage({data: 111});
 }
-if (ea.data==="666"){
+if (ea.data="666"){
 let textEncoder=new TextEncoder();
 var fdb;
 let rq=window.indexedDB.open("F1L3",1);
@@ -59,7 +59,7 @@ let w4=new Uint8ClampedArray(f1d.buffer,0,128);
 w4.set(new Uint8ClampedArray(textEncoder.encode(p4.result.data)),0);
 console.log(f1d.buffer);
 };};};};
-if (ea.data==="888"){
+if (ea.data="888"){
 let utf8decoder=new TextDecoder();
 let isp=utf8decoder.decode(f1a.buffer);
 let wf=new Uint8ClampedArray(f1f.buffer,0,512);
