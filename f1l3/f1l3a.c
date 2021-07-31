@@ -2,7 +2,7 @@
 EM_JS(void,ma,(),{
 let fil=document.getElementById('fil');
 fil.addEventListener('click',function(){
-window.open("https://test.1ink.us/f1l3/f1b.php");
+window.open("./f1b.php");
 });
 let options={type: 'idb',webWorkerSupport: false};
 let disp=document.getElementById('display').innerHTML;
