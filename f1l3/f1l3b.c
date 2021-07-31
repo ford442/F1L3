@@ -30,8 +30,8 @@ auto transaction=db_instance.transaction({TABLE1_NAME,TABLE2_NAME},TRANSACTION_R
 auto table1_store=transaction.objectStore(TABLE1_NAME);
 auto table2_store=transaction.objectStore(TABLE2_NAME);
 val js_object=val::object();
-js_object.set("part",std::string("$01"));
-js_object.set("data",std::string("dataBBBBata"));
+js_object.set("part",std::string("$00"));
+js_object.set("data",std::string("dataAAAAata"));
 auto db_request=table1_store.add(js_object);}
 EMSCRIPTEN_BINDINGS(){
 function(GET_FUNC_NAME_STR(idb_open_onupgradeneeded),&idb_open_onupgradeneeded);
