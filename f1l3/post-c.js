@@ -1,4 +1,4 @@
-document.getElementById("strt").addEventListener('click', function(){
+document.getElementById("strt").addEventListener('click',function(){
 <?php
 $url="https://test.1ink.us/f1l3/test.txt";
 $curl=curl_init($url);
