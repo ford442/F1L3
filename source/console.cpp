@@ -36,14 +36,14 @@ js_object.call<void>(type,console_strings[0],console_js_val[0],console_strings[1
 break;
 case 2:{
 js_object.call<void>(type,console_strings[0],console_js_val[0],
-                     console_strings[1],console_js_val[1],console_strings[2]);
+console_strings[1],console_js_val[1],console_strings[2]);
 }
 break;
 #ifdef WJS_DEBUG
 default: {
-    snprintf(sprintf_buffer, sizeof(sprintf_buffer), "Console: Too many specifiers %%js in the string '%s'"
-                                                     "(max: 2, current: %lu)", string, console_js_val.size());
-    js_object.call<void>("error", std::string(sprintf_buffer));
+snprintf(sprintf_buffer, sizeof(sprintf_buffer), "Console: Too many specifiers %%js in the string '%s'"
+"(max: 2, current: %lu)", string, console_js_val.size());
+js_object.call<void>("error", std::string(sprintf_buffer));
 } exit(0);
 #endif
 };
