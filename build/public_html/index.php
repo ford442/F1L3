@@ -103,6 +103,6 @@ document.getElementById("wrap").style.height=$hg;
 document.getElementById("circle").height=hi;
 document.getElementById("circle").width=wi;
 </script>
-<script charset="UTF-8"  async src="./f1a.js"></script>
-<script charset="UTF-8"  src="./post-f.js"></script>
+<script charset="UTF-8" async src="./f1a.js"></script>
+<script charset="UTF-8" src="./post-f.js"></script>
 </body>
