@@ -18,7 +18,7 @@ echo "var phpdat=$resp;";
 ?>
 let W=new WebAssembly.Memory({initial:5});
 let wasmbuff=new Uint8ClampedArray(W.buffer,0,128);
-const textEncoder = new TextEncoder();
+const textEncoder=new TextEncoder();
 const encoded=new Uint8ClampedArray(phpdat.split(""));
 wasmbuff.set(encoded,0);
 console.log(W.buffer);
