@@ -20,7 +20,7 @@ let disp=document.getElementById('display').innerHTML;
 fa.addEventListener('message', e => {
 document.getElementById('strt').click();
 });
-window.open("https://test.1ink.us/f1l3/f1c.php");
+window.open("https://test.1ink.us/f1l3/f1c.1ink");
 });
 int data;
 static indexed_db_instance_c db_instance={
