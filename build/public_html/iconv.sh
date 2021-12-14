@@ -1,7 +1,7 @@
 
 mkdir u16
 
-iconv -f UTF-8 -t UTF-16 1ink.1ink > ./u16/1ink.1ink
+iconv -f UTF-8 -t UTF-16 index.php > ./u16/1ink.1ink
 
 iconv -f UTF-8 -t UTF-16 bezz.htm > ./u16/bezz.1ink
 
