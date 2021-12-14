@@ -7,5 +7,5 @@ all:
 	$(EMCC) f1l3/f1l3c.c source/console.cpp source/indexed_db.cpp -o build/public_html/js/fc.js
 	$(EMCC) f1l3/f1l3d.c source/console.cpp source/indexed_db.cpp -o build/public_html/js/fd.js
 	$(EMCC) f1l3/f1l3e.c source/console.cpp source/indexed_db.cpp -o build/public_html/js/fe.js
-	$(EMCCC) f1l3/f1l3f.c -o build/public_html/js/ff.js -sMODULARIZE=1 -sEXPORTED_FUNCTIONS=["_main","_str","_pl"] -sEXPORTED_RUNTIME_METHODS=ccall --extern-post-js f1l3/index.js --post-js f1l3/filesys.js --post-js f1l3/ccall.js --post-js f1l3/fs-glsl.js -ffast-math -sENVIRONMENT=web -sINITIAL_MEMORY=128mb -sALLOW_MEMORY_GROWTH=0 -O3 -sMALLOC="emmalloc" -sUSES_DYNAMIC_ALLOC=0 -sSUPPORT_LONGJMP=0 -sFORCE_FILESYSTEM=1 -sSINGLE_FILE=0 -lidbfs.js -g2 -flto=thin -sMALLOC="emmalloc" --closure 1 -sUSE_SDL=2
+	$(EMCCC) f1l3/f1l3f.c -o build/public_html/js/ff.js -sMODULARIZE=1 -sEXPORTED_FUNCTIONS=["_main","_str","_pl"] -sEXPORTED_RUNTIME_METHODS=ccall --extern-post-js f1l3/index.js --post-js f1l3/filesys.js --post-js f1l3/ccall.js --post-js f1l3/fs-glsl.js -ffast-math -sENVIRONMENT=web -sINITIAL_MEMORY=128mb -sALLOW_MEMORY_GROWTH=0 -O3 -sMALLOC="emmalloc" -sUSES_DYNAMIC_ALLOC=0 -sSUPPORT_LONGJMP=0 -sFORCE_FILESYSTEM=1 -sSINGLE_FILE=0 -lidbfs.js -flto=thin -sMALLOC="emmalloc" --closure 0 -sUSE_SDL=2
  
