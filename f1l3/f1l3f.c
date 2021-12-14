@@ -340,10 +340,8 @@ strt();
 void pl(){
 plt();
 }}
-int main(){
-EM_ASM({
-FS.mkdir("/snd");
-FS.mkdir("/shader");
+
+EM_JS(void,ma,(),{
 let options={type: 'idb',webWorkerSupport: false};
 let fa=new BroadcastChannel('f1a',options);
 let ff=new BroadcastChannel('f1f',options);
@@ -361,6 +359,14 @@ fa.postMessage({data: "888"});
 document.getElementById('sbtn').addEventListener("click",function(){
 fa.postMessage({data: "222"});
 fa.postMessage({data: "666"});
-});});
+});
+});
+
+int main(){
+EM_ASM({
+FS.mkdir("/snd");
+FS.mkdir("/shader");
+});
+ma();
 return 1;
 }
