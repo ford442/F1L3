@@ -1,5 +1,5 @@
 EMCC = em++ -O3 --closure 0 -ffast-math --bind -Iinclude -sENVIRONMENT=web -sINITIAL_MEMORY=128mb -s ALLOW_MEMORY_GROWTH=0 -sMALLOC="emmalloc" -sSUPPORT_LONGJMP=0 -sFORCE_FILESYSTEM=1 -lidbfs.js -flto=thin -sSINGLE_FILE=1
-EMCCC = emcc
+EMCCC = em++
 
 all:
 	$(EMCCC) f1l3/f1l3a.c -o build/public_html/js/fa.js -ffast-math -sENVIRONMENT=web -sINITIAL_MEMORY=128mb -sALLOW_MEMORY_GROWTH=0 -O3 -sMALLOC="emmalloc" -sUSES_DYNAMIC_ALLOC=0 -sSUPPORT_LONGJMP=0 -sFORCE_FILESYSTEM=1 -lidbfs.js -flto=thin -sSINGLE_FILE=1
