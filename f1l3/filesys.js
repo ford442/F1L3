@@ -11,24 +11,11 @@ document.getElementById("di").click();
 bz.postMessage({
 data:222
 });});
-function pll(){
-Module.ccall("pl");
-};
-
-let fll=new BroadcastChannel('file');
-fll.addEventListener('message',ea=> {
-let fill=new Uint8Array(ea.data.data);
-FS.writeFile('/snd/sample.wav',fill);
-pll();
-});
 
 document.getElementById("circle").width=window.innerWidth;
 document.getElementById("circle").height=window.innerHeight;
 document.getElementById("contain2").width=window.innerHeight;
 document.getElementById("contain2").height=window.innerHeight;
-document.getElementById('btn3').addEventListener('click',function(){
-window.open('https://test.1ink.us/libflac.js/');
-});
 document.getElementById('btn2').addEventListener('click',function(){
 document.getElementById("ihig").innerHTML=window.innerHeight;
 document.getElementById("circle").height=window.innerHeight;
