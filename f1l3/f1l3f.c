@@ -281,14 +281,11 @@ viewportSizeY=h;
 glClearColor(0.0f,1.0f,0.0f,1.0f);
 emscripten_set_main_loop((void (*)())renderFrame,0,0);
 }
-static void cls_aud(){
-if(dev!=0){
-SDL_PauseAudioDev
+
 extern "C" {
 void str(){
 strt();
-}
-}
+}}
 
 EM_JS(void,ma,(),{
 let options={type: 'idb',webWorkerSupport: false};
