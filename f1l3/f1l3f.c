@@ -1,13 +1,15 @@
-#include <vector>
 #include <algorithm>
 #include <cstring>
+#include <cstdarg>
 #include <cmath>
 #include <cstdio>
+#include <cstdlib>
 #include <EGL/egl.h>
 #include <EGL/eglext.h>
 #include <GLES3/gl3.h>
 #include <emscripten.h>
 #include <emscripten/html5.h>
+#include <SDL2/SDL.h>
 #include <iostream>
 #include <ctime>
 
