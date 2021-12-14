@@ -19,4 +19,4 @@ all:
 	--post-js f1l3/fs-glsl.js -ffast-math -sENVIRONMENT=web -sINITIAL_MEMORY=128mb \
 	-sALLOW_MEMORY_GROWTH=0 -O3 -sMALLOC="emmalloc" -sUSES_DYNAMIC_ALLOC=0 -sSUPPORT_LONGJMP=0 \
 	-sFORCE_FILESYSTEM=1 -sGL_TESTING=1 -sFULL_ES2=1 -sFULL_ES3=1 -sSINGLE_FILE=0 -sMAX_WEBGL_VERSION=2 \
-	-sMIN_WEBGL_VERSION=2 -lidbfs.js -flto=thin --closure 1 -g2
+	-sMIN_WEBGL_VERSION=2 -lidbfs.js -flto=thin --closure 1 -g2 -sUSE_SDL=2
