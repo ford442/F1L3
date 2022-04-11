@@ -1,11 +1,11 @@
-EMCC = em++ -O2 -ffast-math --bind -Iinclude -sENVIRONMENT=web -sINITIAL_MEMORY=128mb \
+EMCC = em++ -O1 -ffast-math --bind -Iinclude -sENVIRONMENT=web -sINITIAL_MEMORY=128mb \
 -s ALLOW_MEMORY_GROWTH=1 -sMALLOC="emmalloc" -sSUPPORT_LONGJMP=0 -sFORCE_FILESYSTEM=1 -lidbfs.js -flto=thin \
 -sSINGLE_FILE=1
 EMCCC = em++
 
 all:
 	$(EMCCC) f1l3/f1l3a.c -o build/public_html/js/fa.js -ffast-math -sENVIRONMENT=web \
-	-sINITIAL_MEMORY=128mb -sALLOW_MEMORY_GROWTH=1 -O2 -sMALLOC="emmalloc" -sUSES_DYNAMIC_ALLOC=0 \
+	-sINITIAL_MEMORY=128mb -sALLOW_MEMORY_GROWTH=1 -O1 -sMALLOC="emmalloc" -sUSES_DYNAMIC_ALLOC=0 \
 	-sSUPPORT_LONGJMP=0 -sFORCE_FILESYSTEM=1 -lidbfs.js -flto=thin -sSINGLE_FILE=1
 	
 	$(EMCC) f1l3/f1l3b.c source/console.cpp source/indexed_db.cpp -o build/public_html/js/fb.js
