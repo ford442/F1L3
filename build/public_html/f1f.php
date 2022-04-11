@@ -5,10 +5,10 @@
 <link rel="preconnect" href="https://css.1ink.us">
 <link rel="preconnect" href="https://wasm.noahcohn.com">
 <title>F*1*L*3 Part F</title>
-<script charset="UTF-8" src="https://js.1ink.us/slideout16.min.js"></script>
-<script charset="UTF-8" src="https://js.1ink.us/rSlider16.min.js"></script>
-<link rel="stylesheet" charset="UTF-8" href="https://css.1ink.us/b3hd16.css">
-<link rel="stylesheet" charset="UTF-8" href="https://css.1ink.us/rSlider16.min.css">
+<script  src="https://js.1ink.us/slideout16.min.1ijs"></script>
+<script src="https://js.1ink.us/rSlider16.min.1ijs"></script>
+<link rel="stylesheet" href="https://css.1ink.us/b3hd16.1iss">
+<link rel="stylesheet" href="https://css.1ink.us/rSlider16.min.1iss">
 <body>
 <nav id="menu">
 <section class="menu-section" id="menu-sections">B*3*H*D
@@ -28,6 +28,7 @@ TIMESLIDER
 <input type="checkbox" id="di" hidden/>
 <input type="button" id="btn" style="background-color: green;position: absolute;display: block;left: 5%;top: 50%;z-index: 999997;border:5px solid #e7e7e7;border-radius:50%;" onclick="document.getElementById('di').click();"></input>
 <input type="button" id="sbtn" style="background-color: yellow;position: absolute;display: block;left: 5%;top: 59%;z-index: 999997;border:5px solid #e7e7e7;border-radius:50%;" onclick="document.getElementById('di').click();"></input>
+<input type="button" id="ubtn" style="background-color: orange;position: absolute;display: block;left: 15%;top: 59%;z-index: 999997;border:5px solid #e7e7e7;border-radius:50%;" onclick="document.getElementById('di').click();"></input>
 <div id="iwid" hidden></div>
 <div id="ihig" hidden></div>
 <div id="wid" hidden></div>
@@ -41,7 +42,7 @@ TIMESLIDER
 <div class="px-video-wrapper" id="wrap">
 <div id="cp" class="bh"></div>
 <div id="filsi" hidden></div>
-<div id="filoc" hidden></div>
+<div id="filoc" hidden>https://test.1ink.us/f1l3/test.txt</div>
 <div style="width:50vw;height:50vh;color:green;position: absolute;display: block;left: 50%;top: 33%;z-index: 999992;" id="display"></div>
 </div>
 </div>

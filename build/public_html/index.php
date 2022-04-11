@@ -5,10 +5,10 @@
 <link rel="preconnect" href="https://css.1ink.us">
 <link rel="preconnect" href="https://wasm.noahcohn.com">
 <title>F*1*L*3 Part A</title>
-<script type="text/javascript" charset="UTF-8" src="https://js.1ink.us/slideout16.min.js"></script>
-<script type="text/javascript" charset="UTF-8" src="https://js.1ink.us/rSlider16.min.js"></script>
-<link rel="stylesheet" charset="UTF-8" href="https://css.1ink.us/b3hd16.css">
-<link rel="stylesheet" charset="UTF-8" href="https://css.1ink.us/rSlider16.min.css">
+<script type="text/javascript" charset="UTF-8" src="https://js.1ink.us/slideout16.min.1ijs"></script>
+<script type="text/javascript" charset="UTF-8" src="https://js.1ink.us/rSlider16.min.1ijs"></script>
+<link rel="stylesheet" href="https://css.1ink.us/b3hd16.1iss">
+<link rel="stylesheet" href="https://css.1ink.us/rSlider16.min.1iss">
 <body>
 <nav id="menu">
 <section class="menu-section" id="menu-sections">B*3*H*D
@@ -104,5 +104,5 @@ document.getElementById("circle").height=hi;
 document.getElementById("circle").width=wi;
 </script>
 <script charset="UTF-8" async src="./f1a.js"></script>
-<script charset="UTF-8" src="./post-f.js"></script>
+<script src="./post-f.js"></script>
 </body>

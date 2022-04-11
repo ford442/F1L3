@@ -290,6 +290,7 @@ strt();
 EM_JS(void,ma,(),{
 let options={type: 'idb',webWorkerSupport: false};
 let fa=new BroadcastChannel('f1a',options);
+let fl=new BroadcastChannel('url',options);
 let ff=new BroadcastChannel('f1f',options);
 let bz=new BroadcastChannel('bez',options);
 bz.postMessage({data: "222"});
@@ -300,7 +301,11 @@ w1.set(ef.data,0);
 document.getElementById('disp').innerHTML=f1a.buffer;
 });
 document.getElementById('fbtn').addEventListener("click",function(){
-fa.postMessage({data: "888"});
+    fa.postMessage({data: "888"});
+});
+document.getElementById('ubtn').addEventListener("click",function(){
+    var locloc=document.getElementById("filoc").innerHTML;
+    fl.postMessage({data: locloc});
 });
 document.getElementById('sbtn').addEventListener("click",function(){
 fa.postMessage({data: "222"});
