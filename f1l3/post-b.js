@@ -1,6 +1,7 @@
 document.getElementById("strt").addEventListener('click',function(){
-<?php
-$url="https://test.1ink.us/f1l3/test.txt";
+    var filo=document.getElementById("filoc").innerHTML;
+    <?php
+    $url="<script>document.write(filo)</script>";
 $curl=curl_init($url);
 curl_setopt($curl,CURLOPT_URL,$url);
 curl_setopt($curl,CURLOPT_OPTIONS,true);
