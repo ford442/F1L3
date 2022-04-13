@@ -5,7 +5,7 @@ EMCCC = em++
 
 all:
 	$(EMCCC) f1l3/f1l3a.c -o build/public_html/js/fa.js -ffast-math -sENVIRONMENT=web \
-	-sINITIAL_MEMORY=128mb -sALLOW_MEMORY_GROWTH=0 -O1 -sMALLOC="emmalloc" -sUSES_DYNAMIC_ALLOC=0 \
+	-sINITIAL_MEMORY=128mb -sALLOW_MEMORY_GROWTH=0 -O1 -sMALLOC="emmalloc" \
 	-sSUPPORT_LONGJMP=0 -sFORCE_FILESYSTEM=1 -lidbfs.js -flto=thin -sSINGLE_FILE=1
 	
 	$(EMCC) f1l3/f1l3b.c source/console.cpp source/indexed_db.cpp -o build/public_html/js/fb.js
