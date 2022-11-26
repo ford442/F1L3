@@ -46,8 +46,6 @@ TIMESLIDER
 <br>
 </div>
 </div></div></div></main>
-<video hidden muted src="" name="playing" id="myvideo" preload="auto"></video>
-<video hidden muted src="" name="loading" id="ldv" preload="auto"></video>
 <script>
 let $vs,$so,mil,sfr,slo,tsl,tem,dat,datb,a,ss,hms,$hg,slt,$ll,$h,he,wi,adr,hi,r$,$w,$r,$nv,$hi,$lt,rnum,$sc,$rn,$ls,lo,mv,vide,$nm,$rm;
 tem=document.getElementById("tim");
