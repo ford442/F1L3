@@ -1,5 +1,6 @@
 #include <emscripten.h>
 #include <indexed_db.hpp>
+
 #define GET_FUNC_NAME_STR(func) #func
 #define DATABASE_NAME "F1L3"
 #define TABLE1_NAME "table1"
