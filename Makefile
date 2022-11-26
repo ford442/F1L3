@@ -1,10 +1,10 @@
-EMCC = em++ -O1 --bind -Iinclude -sENVIRONMENT=web -sINITIAL_MEMORY=128mb \
+EMCC = em++ -O1 --bind -Iinclude -sINITIAL_MEMORY=128mb \
 -s ALLOW_MEMORY_GROWTH=0 -sFORCE_FILESYSTEM=1 -lidbfs.js \
 -sSINGLE_FILE=1
 EMCCC = em++
 
 all:
-	$(EMCCC) f1l3/f1l3a.c -o build/public_html/js/fa.js -sENVIRONMENT=web \
+	$(EMCCC) f1l3/f1l3a.c -o build/public_html/js/fa.js \
 	-sINITIAL_MEMORY=128mb -sALLOW_MEMORY_GROWTH=0 -O1 \
 	-sFORCE_FILESYSTEM=1 -lidbfs.js -sSINGLE_FILE=1
 	
