@@ -1,4 +1,4 @@
-EMCC = em++ -O1 -ffast-math --bind -Iinclude -sENVIRONMENT=web -sINITIAL_MEMORY=128mb \
+EMCC = em++ -O1 --bind -Iinclude -sENVIRONMENT=web -sINITIAL_MEMORY=128mb \
 -s ALLOW_MEMORY_GROWTH=0 -sFORCE_FILESYSTEM=1 -lidbfs.js \
 -sSINGLE_FILE=1
 EMCCC = em++
