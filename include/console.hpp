@@ -1,6 +1,8 @@
 #pragma once
 #include <emscripten/val.h>
+
 using namespace emscripten;
+
 class console_c{
 private:
 const val js_object=val::global("console");
@@ -20,4 +22,5 @@ void time(const char *label,...);
 void timeLog(const char *label,...);
 void timeEnd(const char *label,...);
 };
+
 static console_c console;
