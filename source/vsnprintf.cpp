@@ -1,18 +1,23 @@
 #include <emscripten/val.h>
-using namespace emscripten;
 #include <stdarg.h>
+
+using namespace emscripten;
+
 #define is_digit(c) (c >= '0' && c <= '9')
+
 static int get_atoi(const char **str){
 int n;
 for (n=0; is_digit(**str); (*str)++)
 n=n * 10+**str-'0';
 return n;
 }
+
 static void bputc(char *buf,unsigned *pos,unsigned max,char c){
 if(*pos < max)
 buf[(*pos)]=c;
 (*pos)++;
 }
+
 #define F_ALTERNATE 0001    // put 0x infront 16, 0 on octals, b on binary
 #define F_ZEROPAD   0002    // value should be zero padded
 #define F_LEFT      0004    // left justified if set, otherwise right justified
@@ -30,8 +35,8 @@ buf[(*pos)]=c;
  *  width - how many spaces this should have; padding
  *  flags - above F flags
  */
-static void fmt_int(char *buf,unsigned *len,unsigned maxlen,
-                    long long num,int base,int width,int flags){
+
+static void fmt_int(char *buf,unsigned *len,unsigned maxlen,long long num,int base,int width,int flags){
 char nbuf[64],sign=0;
 char altb[8]; // small buf for sign and #
 unsigned long n=num;
@@ -86,8 +91,8 @@ if(npad > 0 && (flags & F_LEFT))
 while (npad-- > 0)
 bputc(buf,len,maxlen,pchar);
 }
-static void fmt_chr(char *buf,unsigned *pos,unsigned max,char c,
-                    int width,int flags){
+
+static void fmt_chr(char *buf,unsigned *pos,unsigned max,char c,int width,int flags){
 int npad=0;
 if(width > 0) npad=width-1;
 if(npad < 0) npad=0;
@@ -99,16 +104,18 @@ if(npad && (flags & F_LEFT))
 while (npad-- > 0)
 bputc(buf,pos,max,' ');
 }
+
 /**
  * strlen()
  */
+
 static unsigned slen(char *s){
 unsigned i;
 for (i=0; *s; i++,s++);
 return i;
 }
-static void fmt_str(char *buf,unsigned *pos,unsigned max,char *s,
-                    int width,int flags){
+
+static void fmt_str(char *buf,unsigned *pos,unsigned max,char *s,int width,int flags){
 int npad=0;
 if(width > 0) npad=width-slen(s);
 if(npad < 0) npad=0;
@@ -142,6 +149,7 @@ bputc(buf,pos,max,' ');
  * Shrinked down, vsnprintf implementation.
  *  This will not handle floating numbers (yet).
  */
+
 namespace console_sp{
 int vsnprintf(char *buf,unsigned size,const char *fmt,va_list &ap,val **js_object,const char **break_point){
 unsigned n=0;
