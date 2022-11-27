@@ -43,4 +43,4 @@ iconv -f UTF-8 -t UTF-16 ./js/post-d.js > ./u16/post-d.1ijs
 
 iconv -f UTF-8 -t UTF-16 ./js/post-e.js > ./u16/post-e.1ijs
 
-iconv -f UTF-8 -t UTF-16 post-f.js > ./u16/post-e.1ijs
+iconv -f UTF-8 -t UTF-16 post-f.js > ./u16/post-f.1ijs
