@@ -4,7 +4,7 @@ let ff=new XMLHttpRequest();
 ff.open("GET",pth,true);
 
 
-ff.setRequestHeader('Range', 'bytes=100-200');
+ff.setRequestHeader('Range', 'bytes=0-92');
 
 
 ff.responseType="arraybuffer";
