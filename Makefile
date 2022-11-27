@@ -1,6 +1,6 @@
 EMCC = em++ -O1 --bind -Iinclude -std=gnu++20 -sINITIAL_MEMORY=128mb \
 -s ALLOW_MEMORY_GROWTH=0 -sFORCE_FILESYSTEM=1 -lidbfs.js \
--sSINGLE_FILE=1 -sEXPORTED_FUNCTIONS='["_fl"]' -sEXPORTED_RUNTIME_METHODS=cwrap 
+-sSINGLE_FILE=1 -sEXPORTED_FUNCTIONS='["_main","_fl"]' -sEXPORTED_RUNTIME_METHODS=cwrap 
 EMCCC = em++
 
 all:
