@@ -8,7 +8,7 @@
 
 static indexed_db_instance_c db_instance={.js_object = val::undefined()};
 
-void f1l(float *data){
+void f1l(float data){
 auto transaction=db_instance.transaction({TABLE1_NAME,TABLE2_NAME},TRANSACTION_READWRITE);
 auto table1_store=transaction.objectStore(TABLE1_NAME);
 val js_object=val::object();
@@ -19,7 +19,7 @@ auto db_request=table1_store.add(js_object);
 extern "C" {
 
 void fl(float *data){
-f1l(*data);
+f1l(data);
 }
 
 }
