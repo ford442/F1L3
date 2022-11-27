@@ -7,8 +7,7 @@
 <title>F*1*L*3 Part F</title>
 <script crossorigin src="https://js.1ink.us/slideOut.1ijs"></script>
 <script crossorigin src="https://js.1ink.us/rSlider.1ijs"></script>
-<link rel="stylesheet" href="https://css.1ink.us/b3hd16.1iss">
-<link rel="stylesheet" href="https://css.1ink.us/rSlider16.min.1iss">
+<link crossorigin rel="stylesheet" charset="UTF-8" href="https://css.1ink.us/sh1.css"/>
 <body>
 <nav id="menu">
 <section class="menu-section" id="menu-sections">B*3*H*D
