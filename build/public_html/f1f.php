@@ -28,6 +28,7 @@ TIMESLIDER
 <input type="button" id="btn" style="background-color: green;position: absolute;display: block;left: 5%;top: 50%;z-index: 999997;border:5px solid #e7e7e7;border-radius:50%;" onclick="document.getElementById('di').click();"></input>
 <input type="button" id="sbtn" style="background-color: yellow;position: absolute;display: block;left: 5%;top: 59%;z-index: 999997;border:5px solid #e7e7e7;border-radius:50%;" onclick="document.getElementById('di').click();"></input>
 <input type="button" id="ubtn" style="background-color: orange;position: absolute;display: block;left: 15%;top: 59%;z-index: 999997;border:5px solid #e7e7e7;border-radius:50%;" onclick="document.getElementById('di').click();"></input>
+<input type="button" id="fbtn" style="background-color: red;position: absolute;display: block;left: 15%;top: 51%;z-index: 999997;border:5px solid #e7e7e7;border-radius:50%;" onclick="document.getElementById('di').click();"></input>
 <div id="iwid" hidden></div>
 <div id="ihig" hidden></div>
 <div id="wid" hidden></div>
