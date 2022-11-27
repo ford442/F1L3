@@ -14,9 +14,9 @@ all:
 	$(EMCC) f1l3/f1l3e.c source/console.cpp source/indexed_db.cpp -o build/public_html/js/fe.js
 	
 	$(EMCCC) f1l3/f1l3f.c -o build/public_html/js/ff.js \
-	-sEXPORTED_FUNCTIONS='["_main","_str","_read","_pl"]' -sEXPORTED_RUNTIME_METHODS=ccall \
+	-sEXPORTED_FUNCTIONS='["_main","_str","_read","_pl","_f1"]' -sMODULARIZE=1 -sEXPORT_NAME='createModule' -sEXPORTED_RUNTIME_METHODS=ccall,cwrap \
 	--post-js f1l3/filesys.js -std=gnu++20 --post-js f1l3/ccall.js \
-	--post-js f1l3/fs-glsl.js -sINITIAL_MEMORY=128mb \
+	--post-js f1l3/fs-glsl.js --extern-post-js f1l3/index.js -sINITIAL_MEMORY=128mb \
 	-sALLOW_MEMORY_GROWTH=0 -O1 \
 	-sFORCE_FILESYSTEM=1 -sFULL_ES3=1 -sSINGLE_FILE=0 -sMAX_WEBGL_VERSION=2 \
 	-sMIN_WEBGL_VERSION=2 -lidbfs.js -sUSE_SDL=2
