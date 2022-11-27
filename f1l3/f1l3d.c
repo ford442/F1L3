@@ -6,6 +6,22 @@
 #define TABLE1_NAME "table1"
 #define TABLE2_NAME "table2"
 
+void f1l(float *data){
+auto transaction=db_instance.transaction({TABLE1_NAME,TABLE2_NAME},TRANSACTION_READWRITE);
+auto table1_store=transaction.objectStore(TABLE1_NAME);
+val js_object=val::object();
+js_object.set("datac",data);
+auto db_request=table1_store.add(js_object);
+}
+
+extern "C" {
+
+void fl(float *data){
+f1l(*data);
+}
+
+}
+
 EM_JS(void,ma,(),{
 window.open("./f1e.1ink");
 let opts={type: 'idb',webWorkerSupport: false};
