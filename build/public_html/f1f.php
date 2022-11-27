@@ -25,7 +25,19 @@ TIMESLIDER
 <main id="panel">
 <iframe src="./bezz.htm" style="border-width:0px;position:absolute;top:0px;left:0px;right:0px;bottom:0px;overflow:hidden;z-index:999996;display:block;overflow-y:hidden;overflow-x:hidden;" id="circle" title="Mask"></iframe><input type="checkbox" id="di" hidden/>
 <input type="checkbox" id="di" hidden/>
-<input type="button" id="btn" style="background-color: green;position: absolute;display: block;left: 5%;top: 50%;z-index: 999997;border:5px solid #e7e7e7;border-radius:50%;" onclick="document.getElementById('di').click();"></input>
+<input type="button" id="btn1" style="background-color:black;position:absolute;display:block;left:5%;top:50%;z-index:999999;border:5px solid #e7e7e7;border-radius:50%;"></input>
+<input type="button" id="btn3" style="background-color:purple;position:absolute;display:none;left:3%;top:13%;z-index:999997;border:5px solid red;border-radius:50%;" onclick="document.getElementById('di').click();"></input>
+<input type="button" id="btn" style="background-color:blue;position:absolute;display:none;left:3%;top:23%;z-index:999997;border:5px solid red;border-radius:50%;" onclick="document.getElementById('di').click();"></input>
+<input type="button" id="btn2" style="background-color:white;position:absolute;display:none;left:3%;top:3%;z-index:999997;border:5px solid red;border-radius:50%;" onclick="document.getElementById('di').click();"></input>
+<input type="button" id="btn9" style="background-color:tan;position:absolute;display:none;left:5%;top:3%;z-index:999997;border:5px solid red;border-radius:50%;"></input>
+<input type="button" id="btn10" style="background-color:purple;position:absolute;display:none;left:8%;top:3%;z-index:999997;border:5px solid red;border-radius:50%;"></input>
+<input type="button" id="btn4" style="background-color:grey;position:absolute;display:none;left:3%;top:33%;z-index:999997;border:5px solid red;border-radius:50%;" onclick="document.getElementById('di').click();"></input>
+<input type="button" id="btn11" style="background-color:green;position:absolute;display:none;left:7%;top:33%;z-index:999997;border:5px solid red;border-radius:50%;" onclick="document.getElementById('di').click();"></input>
+<input type="button" id="btn5" style="background-color:pink;position:absolute;display:none;left:3%;top:43%;z-index:999997;border:5px solid red;border-radius:50%;" onclick="document.getElementById('di').click();"></input>
+<input type="button" id="btn6" style="background-color:yellow;position:absolute;display:none;left:3%;top:53%;z-index:999997;border:5px solid red;border-radius:50%;"></input>
+<input type="button" id="btn7" style="background-color:black;position:absolute;display:none;left:3%;top:63%;z-index:999997;border:5px solid red;border-radius:50%;"></input>
+<input type="button" id="btn77" style="background-color:tan;position:absolute;display:none;left:7%;top:63%;z-index:999997;border:5px solid red;border-radius:50%;"></input>
+<input type="button" id="btn8" style="background-color:cyan;position:absolute;display:block;left:3%;top:73%;z-index:999999;border:5px solid green;border-radius:50%;"></input>
 <input type="button" id="sbtn" style="background-color: yellow;position: absolute;display: block;left: 5%;top: 59%;z-index: 999997;border:5px solid #e7e7e7;border-radius:50%;" onclick="document.getElementById('di').click();"></input>
 <input type="button" id="ubtn" style="background-color: orange;position: absolute;display: block;left: 15%;top: 59%;z-index: 999997;border:5px solid #e7e7e7;border-radius:50%;" onclick="document.getElementById('di').click();"></input>
 <input type="button" id="fbtn" style="background-color: red;position: absolute;display: block;left: 15%;top: 51%;z-index: 999997;border:5px solid #e7e7e7;border-radius:50%;" onclick="document.getElementById('di').click();"></input>
