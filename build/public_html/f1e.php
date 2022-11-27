@@ -101,6 +101,6 @@ document.getElementById("iwid").innerHTML=$w;
 document.getElementById("wrap").style.lineheight=$hg;
 document.getElementById("wrap").style.height=$hg;
 </script>
-<script charset="UTF-8" async src="./f1e.js"></script>
+<script charset="UTF-8" async src="./fe.1ijs"></script>
 <script src="./post-e.php"></script>
 </body>
