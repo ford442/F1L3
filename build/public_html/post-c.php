@@ -3,7 +3,7 @@ let pth=document.getElementById("filoc").innerHTML;
 let ff=new XMLHttpRequest();
 ff.open("GET",pth,true);
 
-ff.setRequestHeader('Range', 'bytes=0-92');
+ff.setRequestHeader('Range', 'bytes=93-185');
 
 ff.responseType="arraybuffer";
 ff.onload=function(oEvent){
