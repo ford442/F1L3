@@ -5,8 +5,8 @@
 <link rel="preconnect" href="https://css.1ink.us">
 <link rel="preconnect" href="https://wasm.noahcohn.com">
 <title>F*1*L*3 Part F</title>
-<script  src="https://js.1ink.us/slideout16.min.1ijs"></script>
-<script src="https://js.1ink.us/rSlider16.min.1ijs"></script>
+<script crossorigin src="https://js.1ink.us/slideOut.1ijs"></script>
+<script crossorigin src="https://js.1ink.us/rSlider.1ijs"></script>
 <link rel="stylesheet" href="https://css.1ink.us/b3hd16.1iss">
 <link rel="stylesheet" href="https://css.1ink.us/rSlider16.min.1iss">
 <body>
