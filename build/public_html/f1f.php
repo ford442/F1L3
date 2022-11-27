@@ -38,6 +38,8 @@ TIMESLIDER
 <div id="tim" hidden>4500</div>
 <div id="shut" hidden>1</div>
 <div id="wrapper">
+<div id="contain2">
+  
 <div class="px-video-container" id="myvid">
 <div class="px-video-wrapper" id="wrap">
 <div id="cp" class="bh"></div>
@@ -45,6 +47,9 @@ TIMESLIDER
 <div id="filoc" hidden>https://test.1ink.us/f1l3/test.txt</div>
 <div style="width:50vw;height:50vh;color:green;position: absolute;display: block;left: 50%;top: 33%;z-index: 999992;" id="display"></div>
 </div>
+</div>
+  
+  
 </div>
 </div>
 </main>
