@@ -6,6 +6,8 @@
 #define TABLE1_NAME "table1"
 #define TABLE2_NAME "table2"
 
+static indexed_db_instance_c db_instance={.js_object = val::undefined()};
+
 void f1l(float *data){
 auto transaction=db_instance.transaction({TABLE1_NAME,TABLE2_NAME},TRANSACTION_READWRITE);
 auto table1_store=transaction.objectStore(TABLE1_NAME);
@@ -34,7 +36,6 @@ document.getElementById('strt').click();
 });
 });
 
-static indexed_db_instance_c db_instance={.js_object = val::undefined()};
 
 int main(){
 ma();
