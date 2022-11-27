@@ -1,11 +1,11 @@
-EMCC = em++ -O1 --bind -Iinclude -sINITIAL_MEMORY=128mb \
+EMCC = em++ -O1 --bind -Iinclude -std=gnu++20 -sINITIAL_MEMORY=128mb \
 -s ALLOW_MEMORY_GROWTH=0 -sFORCE_FILESYSTEM=1 -lidbfs.js \
 -sSINGLE_FILE=1
 EMCCC = em++
 
 all:
 	$(EMCCC) f1l3/f1l3a.c -o build/public_html/js/fa.js \
-	-sINITIAL_MEMORY=128mb -sALLOW_MEMORY_GROWTH=0 -O1 \
+	-sINITIAL_MEMORY=128mb -std=gnu++20 -sALLOW_MEMORY_GROWTH=0 -O1 \
 	-sFORCE_FILESYSTEM=1 -lidbfs.js -sSINGLE_FILE=1
 	
 	$(EMCC) f1l3/f1l3b.c source/console.cpp source/indexed_db.cpp -o build/public_html/js/fb.js
