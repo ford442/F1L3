@@ -67,8 +67,9 @@ let Fb=utf8decoder.decode(f1b.buffer);
 let Fc=utf8decoder.decode(f1c.buffer);
 let Fd=utf8decoder.decode(f1d.buffer);
 let Out=(Fa+Fb+Fc+Fd);
+let mm=f1a.buffer+f1b.buffer+f1c.buffer+f1d.buffer
 let wf=new Uint8ClampedArray(f1f.buffer,0,512);
-wf.set(Out,0);
+wf.set(mm,0);
 console.log(Out);
 console.log(wf.buffer);
 };});
