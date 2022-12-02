@@ -16,7 +16,7 @@ let encoded=textEncoder.encode(sarrayBuffer);
 encoded=new Uint8ClampedArray(encoded);
 wasmbuff.set(encoded,0);
 let fill=Module.cwrap('fl',null,['array'])
-fill(w.buffer);
+fill(wasmbuff);
 }}
 ff.send(null);
 });
