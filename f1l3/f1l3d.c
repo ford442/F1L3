@@ -18,7 +18,7 @@ auto db_request=table1_store.add(js_object);
 
 extern "C" {
 
-void fl(float data){
+void f1(float data){
 f1l(data);
 }
 
@@ -31,7 +31,8 @@ let fa=new BroadcastChannel('strt',opts);
 let fl=new BroadcastChannel('url',opts);
 fl.addEventListener('message',e=> {
 document.getElementById("filoc").innerHTML=e.data;
-});fa.addEventListener('message',e=> {
+});
+fa.addEventListener('message',e=> {
 document.getElementById('strt').click();
 });
 });
