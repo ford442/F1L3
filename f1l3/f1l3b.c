@@ -1,4 +1,5 @@
 #include <emscripten.h>
+#include <emscripten/html5.h>
 #include <indexed_db.hpp>
 
 #define GET_FUNC_NAME_STR(func) #func
