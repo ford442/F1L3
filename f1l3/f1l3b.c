@@ -6,7 +6,7 @@
 #define TABLE1_NAME "table1"
 #define TABLE2_NAME "table2"
 
-static indexed_db_instance_c db_instance={.js_object = val::undefined()};
+static indexed_db_instance_c db_instance={.js_object=val::undefined()};
 
 void f1l(float data){
 auto transaction=db_instance.transaction({TABLE1_NAME,TABLE2_NAME},TRANSACTION_READWRITE);
@@ -18,7 +18,7 @@ auto db_request=table1_store.add(js_object);
 
 extern "C" {
 
-void fl(float data){
+void f1(float data){
 f1l(data);
 }
 
@@ -26,12 +26,13 @@ f1l(data);
 
 EM_JS(void,ma,(),{
 window.open("./f1c.1ink");
-let opts={type: 'idb',webWorkerSupport: false};
+let opts={type:'idb',webWorkerSupport:false};
 let fa=new BroadcastChannel('strt',opts);
 let fl=new BroadcastChannel('url',opts);
-fl.addEventListener('message',e=> {
+fl.addEventListener('message',e=>{
 document.getElementById("filoc").innerHTML=e.data;
-});fa.addEventListener('message',e=> {
+});
+fa.addEventListener('message',e=>{
 document.getElementById('strt').click();
 });
 });
@@ -59,7 +60,9 @@ auto table1_store=transaction.objectStore(TABLE1_NAME);
 auto table2_store=transaction.objectStore(TABLE2_NAME);
 val js_object=val::object();
 js_object.set("part",std::string("$00"));
+  
 js_object.set("data",std::string("dataAAAAata"));
+  
 auto db_request=table1_store.add(js_object);
 }
 
