@@ -1,4 +1,5 @@
 #include <emscripten.h>
+#include <emscripten/html5.h>
 
 EM_JS(void,ma,(),{
 let fil=document.getElementById('fil');
@@ -74,4 +75,8 @@ console.log(Out);
 console.log(wf.buffer);
 };});
 });
-int main(){ma();return 1;}
+
+int main(){
+ma();
+return 1;
+}
