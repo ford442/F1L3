@@ -18,7 +18,7 @@ auto db_request=table1_store.add(js_object);
 
 extern "C" {
 
-void fl(float *data){
+void f1(float *data){
 f1l(*data);
 }
 
