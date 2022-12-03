@@ -15,10 +15,10 @@ objectStore.add(fileData);
 function read(){
 let transaction=db.transaction(["file"]);
 let objectStore=transaction.objectStore("file");
-let requesta=objectStore.get("00");
-let requestb=objectStore.get("01");
-let requestc=objectStore.get("02");
-let requestd=objectStore.get("03");
+let requesta=objectStore.get("$00");
+let requestb=objectStore.get("$01");
+let requestc=objectStore.get("$02");
+let requestd=objectStore.get("$03");
 request.onsuccess=function(event){
 console.log(requesta.result.data,requestb.result.data,requestc.result.data,requestd.result.data);
 };
