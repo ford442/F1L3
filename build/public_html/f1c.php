@@ -101,5 +101,4 @@ document.getElementById("wrap").style.lineheight=$hg;
 document.getElementById("wrap").style.height=$hg;
 </script>
 <script charset="UTF-8" async src="./fc.1ijs"></script>
-<script src="./post-c.php"></script>
 </body>
