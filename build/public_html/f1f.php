@@ -119,9 +119,6 @@ document.getElementById("wrap").style.lineheight=$hg;
 document.getElementById("wrap").style.height=$hg;
 document.getElementById("circle").height=hi;
 document.getElementById("circle").width=wi;
-
-
-
 </script>
 <script charset="UTF-8" async src="./ff.1ijs"></script>
 </body>
