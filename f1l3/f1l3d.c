@@ -13,7 +13,8 @@ void f1l(float data){
 auto transaction=db_instance.transaction({TABLE1_NAME,TABLE2_NAME},TRANSACTION_READWRITE);
 auto table1_store=transaction.objectStore(TABLE1_NAME);
 val js_object=val::object();
-js_object.set("$02",data);
+js_object.set("part",std::string("$02"));
+js_object.set("data",data);
 auto db_request=table1_store.add(js_object);
 }
 
