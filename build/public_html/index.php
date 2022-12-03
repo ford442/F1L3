@@ -101,5 +101,4 @@ document.getElementById("circle").height=hi;
 document.getElementById("circle").width=wi;
 </script>
 <script charset="UTF-8" async src="./fa.1ijs"></script>
-<script src="./post-f.1ijs"></script>
 </body>
