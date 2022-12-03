@@ -2,9 +2,7 @@ document.getElementById("strt").addEventListener('click',function(){
 let pth=document.getElementById("filoc").innerHTML;
 let ff=new XMLHttpRequest();
 ff.open("GET",pth,true);
-
-ff.setRequestHeader('Range', 'bytes=93-185');
-
+ff.setRequestHeader('Range','bytes=93-185');
 ff.responseType="arraybuffer";
 ff.onload=function(oEvent){
 let sarrayBuffer=ff.response;
@@ -16,7 +14,7 @@ let encoded=textEncoder.encode(sarrayBuffer);
 encoded=new Uint8ClampedArray(encoded);
 wasmbuff.set(encoded,0);
 let fill=Module.cwrap('fl',null,['array'])
-fill(w.buffer);
+fill(wasmbuff);
 }}
 ff.send(null);
 });
