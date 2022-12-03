@@ -2,9 +2,7 @@ document.getElementById("strt").addEventListener('click',function(){
 let pth=document.getElementById("filoc").innerHTML;
 let ff=new XMLHttpRequest();
 ff.open("GET",pth,true);
-
-ff.setRequestHeader('Range', 'bytes=186-278');
-
+ff.setRequestHeader('Range','bytes=186-278');
 ff.responseType="arraybuffer";
 ff.onload=function(oEvent){
 let sarrayBuffer=ff.response;
