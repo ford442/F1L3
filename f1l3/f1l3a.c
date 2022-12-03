@@ -37,7 +37,7 @@ let w1=new Uint8ClampedArray(f1a.buffer,0,128);
 w1.set(new Uint8ClampedArray(textEncoder.encode(p1.result.data)),0);
 console.log(f1a.buffer);
 };};
-let p2=objectStore.get("$00");
+let p2=objectStore.get("$01");
 p2.onsuccess=function(event){
 console.log("F1 get success 01");
 if(p2.result){
@@ -45,7 +45,7 @@ let w2=new Uint8ClampedArray(f1b.buffer,0,128);
 w2.set(new Uint8ClampedArray(textEncoder.encode(p2.result.data)),0);
 console.log(f1b.buffer);
 };};
-let p3=objectStore.get("$00");
+let p3=objectStore.get("$02");
 p3.onsuccess=function(event){
 console.log("F1 get success 02");
 if(p3.result){
