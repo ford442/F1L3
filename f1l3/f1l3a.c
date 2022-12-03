@@ -29,7 +29,7 @@ rq.onsuccess=function(event){
 fdb=rq.result;
 let transaction=fdb.transaction(["table1"]);
 let objectStore=transaction.objectStore("table1");
-let p1=objectStore.get("dataa");
+let p1=objectStore.get("$00");
 p1.onsuccess=function(event){
 console.log("F1 get success 00");
 if(p1.result){
@@ -37,7 +37,7 @@ let w1=new Uint8ClampedArray(f1a.buffer,0,128);
 w1.set(new Uint8ClampedArray(textEncoder.encode(p1.result.data)),0);
 console.log(f1a.buffer);
 };};
-let p2=objectStore.get("datab");
+let p2=objectStore.get("$01");
 p2.onsuccess=function(event){
 console.log("F1 get success 01");
 if(p2.result){
@@ -45,7 +45,7 @@ let w2=new Uint8ClampedArray(f1b.buffer,0,128);
 w2.set(new Uint8ClampedArray(textEncoder.encode(p2.result.data)),0);
 console.log(f1b.buffer);
 };};
-let p3=objectStore.get("datac");
+let p3=objectStore.get("$02");
 p3.onsuccess=function(event){
 console.log("F1 get success 02");
 if(p3.result){
@@ -53,7 +53,7 @@ let w3=new Uint8ClampedArray(f1c.buffer,0,128);
 w3.set(new Uint8ClampedArray(textEncoder.encode(p3.result.data)),0);
 console.log(f1c.buffer);
 };};
-let p4=objectStore.get("datad");
+let p4=objectStore.get("$03");
 p4.onsuccess=function(event){
 console.log("F1 get success 03");
 if(p4.result){
